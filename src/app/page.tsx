@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function HomePage() {
   return (
     <main className="flex flex-col justify-center">
-      <div className="h-72 w-screen"></div>
+      <div className="h-48 w-screen"></div>
       <h1 className="mx-auto text-7xl font-extrabold">
         Hello. My name is Tyler.
       </h1>
