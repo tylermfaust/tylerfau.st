@@ -1,5 +1,7 @@
+import { IconBrandLinkedin } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HomePage() {
   return (
@@ -16,6 +18,22 @@ export default function HomePage() {
           height={256}
           className="rounded-full"
         />
+      </div>
+      <div className="mt-12 flex justify-center">
+        <a
+          href="https://www.linkedin.com/in/tylerfaust"
+          target="_blank"
+          className="mr-2 transition-transform ease-in hover:scale-110"
+        >
+          <FaLinkedin size={36} color="#0077B5" />
+        </a>
+        <a
+          href="https://github.com/tylermfaust"
+          target="_blank"
+          className="transition-transform ease-in hover:scale-110"
+        >
+          <FaGithub size={36} color="#1f2328" />
+        </a>
       </div>
     </main>
   );
