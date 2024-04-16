@@ -40,13 +40,27 @@ export default function RootLayout({
             />
           </Link>
           <div>
-            <Link href="/" className="mr-6">
+            <Link
+              href="/"
+              className="mr-6 font-bold text-[#545454] hover:underline"
+            >
               Home
             </Link>
-            <Link href="/blog">Blog</Link>
+            <Link
+              href="/blog"
+              className="font-bold text-[#545454] hover:underline"
+            >
+              Blog
+            </Link>
           </div>
         </div>
         {children}
+        <div
+          id="footer"
+          className="absolute bottom-4 flex h-12 w-full justify-between px-4 py-8 font-bold"
+        >
+          © 2024 Tyler Faust
+        </div>
       </body>
     </html>
   );

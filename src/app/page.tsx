@@ -36,11 +36,11 @@ export default function HomePage() {
       <div>
         <p className="mt-12 flex content-center justify-center text-center text-lg">
           I graduated from the University of Texas with an MA in Global Policy
-          Studies specializing in human rights. My academic interests included
+          Studies specializing in human rights. My academic interests include
           LGBTQ issues, American foreign policy, nongovernmental organizations,
           and international law.
         </p>
-        <p className="mt-12 flex content-center justify-center text-center text-lg">
+        <p className="mt-6 flex content-center justify-center text-center text-lg">
           I enjoy crafting and implementing strategies that move the needle on
           progressive causes and empower individuals to make themselves heard.
         </p>
