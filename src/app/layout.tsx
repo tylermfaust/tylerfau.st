@@ -20,10 +20,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const year = new Date().getFullYear();
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable} mx-auto max-w-7xl`}>
-        <div id="header" className="flex h-12 w-full justify-between px-4 py-4">
+        <nav className="flex h-12 w-full justify-between px-4 py-4">
           <Link
             href="/"
             style={{
@@ -53,14 +54,11 @@ export default function RootLayout({
               Blog
             </Link>
           </div>
-        </div>
+        </nav>
         {children}
-        <div
-          id="footer"
-          className="absolute bottom-4 flex h-12 w-full justify-between px-4 py-8 font-bold"
-        >
-          © 2024 Tyler Faust
-        </div>
+        <footer className="absolute bottom-4 flex h-12 w-full justify-between px-4 py-8 font-bold">
+          © 2021-{year} Tyler Faust
+        </footer>
       </body>
     </html>
   );
