@@ -6,7 +6,8 @@ export default function HomePage() {
     <main className="flex flex-col justify-center">
       <div className="h-48 w-screen"></div>
       <h1 className="mx-auto text-7xl font-extrabold">
-        Hello. My name is Tyler.
+        Hello. My name is{" "}
+        <span className="underline decoration-[#d0eaff]">Tyler</span>.
       </h1>
       <div className="mt-12 flex justify-center">
         <Image
