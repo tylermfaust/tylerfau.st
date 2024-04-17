@@ -1,7 +1,6 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
 
 const inter = Inter({
@@ -33,7 +32,8 @@ export default function RootLayout({
               zIndex: 5,
             }}
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/TF Logo-Grey-Transparent.png"
               alt="Personal logo of Tyler Faust."
               width={128}

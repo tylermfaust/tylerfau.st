@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HomePage() {
@@ -10,7 +9,8 @@ export default function HomePage() {
         <span className="underline decoration-[#d0eaff]">Tyler</span>.
       </h1>
       <div className="mt-12 flex justify-center">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/Tyler.jpg"
           alt="An image of Tyler Faust."
           width={256}
