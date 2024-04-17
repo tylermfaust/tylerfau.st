@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function HomePage() {
@@ -9,8 +10,7 @@ export default function HomePage() {
         <span className="underline decoration-[#d0eaff]">Tyler</span>.
       </h1>
       <div className="mt-12 flex justify-center">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/Tyler.jpg"
           alt="An image of Tyler Faust."
           width={256}
@@ -34,14 +34,14 @@ export default function HomePage() {
           <FaGithub size={36} color="#1f2328" />
         </a>
       </div>
-      <div>
-        <p className="mt-12 flex content-center justify-center text-center text-lg">
+      <div className="mx-auto flex max-w-prose flex-col content-center justify-center text-center text-lg">
+        <p className="mt-12">
           I graduated from the University of Texas with an MA in Global Policy
           Studies specializing in human rights. My academic interests include
           LGBTQ issues, American foreign policy, nongovernmental organizations,
           and international law.
         </p>
-        <p className="mt-6 flex content-center justify-center text-center text-lg">
+        <p className="mt-6">
           I enjoy crafting and implementing strategies that move the needle on
           progressive causes and empower individuals to make themselves heard.
         </p>

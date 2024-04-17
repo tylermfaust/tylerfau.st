@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 
 const inter = Inter({
@@ -22,7 +23,7 @@ export default function RootLayout({
   const year = new Date().getFullYear();
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} mx-auto max-w-7xl`}>
+      <body className={`font-sans ${inter.variable} mx-auto w-full`}>
         <nav className="flex h-12 w-full justify-between px-4 py-4">
           <Link
             href="/"
@@ -32,8 +33,7 @@ export default function RootLayout({
               zIndex: 5,
             }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/TF Logo-Grey-Transparent.png"
               alt="Personal logo of Tyler Faust."
               width={128}
