@@ -56,7 +56,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
-        <footer className="absolute bottom-4 flex h-12 w-full justify-between px-4 py-8 font-bold text-[#545454]">
+        <footer className="bottom-4 flex h-12 w-full justify-between px-4 py-8 font-bold text-[#545454]">
           © 2020-{year} Tyler Faust
         </footer>
       </body>
